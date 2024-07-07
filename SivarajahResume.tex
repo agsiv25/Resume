@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author : Arun Sivarajah
+% Based off of: https://github.com/jakegut/resume/tree/master
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Arun Sivarajah} \\ \vspace{1pt}
+    \small (847)-281-6420 $|$ \href{mailto:x@x.com}{\underline{sivarajah@wisc.edu}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/arun-sivarajah/}} $|$
+    \href{https://github.com/...}{\underline{github.com/agsiv25}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Wisconsin-Madison}{Madison, WI}
+      {B.S. Computer Engineering \& B.S. Computer Science}{Aug. 2021 -- Dec. 2024}
+      \resumeItemListStart
+        \resumeItem{\textbf{Technical Courses:} Algorithm Design and Data Structures, Intermediate \& Advanced Java, Digital Systems/Computer Architecture, Signals/Computation, C programming \& Machine Organization, Javascript \& React, Microprocessor Systems, Programming Languages, Digital System Design \& Synthesis}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Data Platform Engineering Intern}{May 2024 -- Aug 2024}
+      {StoneX}{Chicago, IL}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained ETL Pipelines for Trade Surveillance through Databricks}
+        \resumeItem{Developed a full-stack web storefront deployed on Docker to house Market Intelligence datasets and APIs}
+        \resumeItem{Set up Redis backend with RedisGraph store for tagging relationships, hydrated through Databricks Unity Catalog}
+        \resumeItem{Utilized Python, Databricks, Spark, Airflow, Kafka(Redpanda), Typescript, React, MUI, Redis, FastAPI, Docker}
+      \resumeItemListEnd
+
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Data Engineer}{Aug 2022 -- May 2024}
+      {Forest Data Network}{Madison, WI}
+      \resumeItemListStart
+        \resumeItem{Writing python scripts to scrape and filter timber pricing data from websites for hosting on Tableau}
+        \resumeItem{Devising ML scripts to try and identify trends in pricing and predict future outcomes}
+        \resumeItem{Utilizing Python, Tableau, PostgreSQL and Excel}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Platform Engineering Intern}{May 2023 -- Aug 2023}
+      {American Family Insurance}{Madison, WI}
+      \resumeItemListStart
+        \resumeItem{Built a containerized full-stack application to automate the reservation of Kubernetes IP ranges for clusters.}
+        \resumeItem{Decreased manual team workload by 30 requests per quarter and wait times from 4 days to instant}
+        \resumeItem{Created npm software package of software templates to increase security of automatic deployment of resources}
+        \resumeItem{Utilized React, Typescript, Express/Node.js, GCP, GitLab CI/CD, Kubernetes, Docker, GKE, GCP API}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Server and Client Intern}{Jun 2022 -- Aug 2022}
+      {Exelon}{Chicago, IL}
+      \resumeItemListStart
+        \resumeItem{Wrote batch files for software releases to the GE Mobile Enterprise Suite, Managed/Queried databases}
+        \resumeItem{Utilized Microsoft Office suite, PowerShell scripting and Oracle SQL}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Machine Learning Research Intern}{May 2023 -- Aug 2023}
+      {Skunkworks Informatics @ UW-Madison}{Madison, WI}
+      \resumeItemListStart
+        \resumeItem{Created Feature Generation/Selection models for materials science datasets}
+        \resumeItem{Integrated Buckingham-Pi feature generation to MAGPIE feature tables on MAST-ML open source software}
+        \resumeItem{Coded in python while utilizing machine learning packages including: Scikit-learn, TensorFlow, and Numpy}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Computer Vision Intern}{May 2020 -- Sep 2020}
+      {Lake Forest College}{Lake Forest, IL}
+      \resumeItemListStart
+        \resumeItem{Created a Neural Network to identify pneumonia in lung x-rays of COVID-19 patients, 75\% accuracy for 3 classes}
+        \resumeItem{Utilized Python(Pytorch, Tensorflow, Keras, CUDA, NumPy, Pandas, Seaborn)}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript, Java, C, SQL, Verilog, HTML/CSS, R} \\
+     \textbf{Frameworks}{: React, Node.js, Express.js, Typescript, Material-UI, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, Kubernetes, Apache Spark, Airflow, Kafka, Databricks, Redis, Dremio, Github, Gitlab, Google Cloud Platform, Azure DevOps, Wrangler} \\
+     \textbf{Libraries}{: Pyspark, Pytorch, Tensorflow, Keras, Pandas, NumPy}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
